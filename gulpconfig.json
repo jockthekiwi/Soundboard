@@ -1,0 +1,20 @@
+{
+    "serverPort": 9000,
+    "sourceDir": "src",
+    "buildDir": "dist",
+    "index": "src/index.html",
+    "script": "src/scripts/index.js",
+    "style": "src/styles/index.scss",
+    "misc": [
+        "node_modules/font-awesome/fonts/**/*.{otf,eot,svg,ttf,woff,woff2}",
+        "src/images/**/*.{ico,gif,jpg,png}",
+        "src/sounds/**/*.{wav,mp3,mp4,flac}"
+    ],
+    "environments": [{
+        "name": "development",
+        "minify": false
+    }, {
+        "name": "production",
+        "minify": true
+    }]
+}
